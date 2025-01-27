@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualization Gallery</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+        .algorithm-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        
+        .algorithm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .image-card {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        
+        .image-card h4 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        
+        .image-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello World, this is my first web page.</h1>
+    <div class="wrapper">
+        <header>
+            <h1>Algorithm Visualization Gallery</h1>
+            <p>A visual exploration of 6 different algorithms with various test cases and implementations</p>
+        </header>
+        
+        <section>
+            <!-- Sorting Algorithm Section -->
+            <div class="algorithm-section">
+                <h2>Sorting Algorithms</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort Case 1">
+                        <h4>Bubble Sort</h4>
+                        <p>Best Case Scenario</p>
+                    </div>
+                    <!-- Repeat for 5 more sorting visualizations -->
+                </div>
+            </div>
+
+            <!-- Pathfinding Algorithm Section -->
+            <div class="algorithm-section">
+                <h2>Pathfinding Algorithms</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="A* Pathfinding Case 1">
+                        <h4>A* Algorithm</h4>
+                        <p>Maze Navigation</p>
+                    </div>
+                    <!-- Repeat for 5 more pathfinding visualizations -->
+                </div>
+            </div>
+
+            <!-- Tree Algorithm Section -->
+            <div class="algorithm-section">
+                <h2>Tree Algorithms</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Binary Search Tree Case 1">
+                        <h4>Binary Search Tree</h4>
+                        <p>Balanced Tree Operations</p>
+                    </div>
+                    <!-- Repeat for 5 more tree visualizations -->
+                </div>
+            </div>
+
+            <!-- Graph Algorithm Section -->
+            <div class="algorithm-section">
+                <h2>Graph Algorithms</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Dijkstra Algorithm Case 1">
+                        <h4>Dijkstra's Algorithm</h4>
+                        <p>Shortest Path Finding</p>
+                    </div>
+                    <!-- Repeat for 5 more graph visualizations -->
+                </div>
+            </div>
+
+            <!-- Dynamic Programming Section -->
+            <div class="algorithm-section">
+                <h2>Dynamic Programming</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Knapsack Problem Case 1">
+                        <h4>Knapsack Problem</h4>
+                        <p>Optimal Solution Visualization</p>
+                    </div>
+                    <!-- Repeat for 5 more DP visualizations -->
+                </div>
+            </div>
+
+            <!-- Search Algorithm Section -->
+            <div class="algorithm-section">
+                <h2>Search Algorithms</h2>
+                <div class="algorithm-grid">
+                    <div class="image-card">
+                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Binary Search Case 1">
+                        <h4>Binary Search</h4>
+                        <p>Sorted Array Search</p>
+                    </div>
+                    <!-- Repeat for 5 more search visualizations -->
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Maintained by <a href="https://github.com/yourusername">Your GitHub Username</a></p>
+            <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
