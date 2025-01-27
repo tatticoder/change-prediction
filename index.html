@@ -3,145 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithm Visualization Gallery</title>
+    <title>Algorithm Visualizations</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-        .algorithm-section {
-            margin: 40px 0;
-            padding: 20px;
-            background: #f8f8f8;
-            border-radius: 8px;
-        }
-        
-        .algorithm-grid {
+        .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            margin-top: 20px;
+            margin-bottom: 40px;
         }
         
-        .image-card {
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
-        .image-card:hover {
-            transform: translateY(-5px);
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
         }
         
-        .image-card img {
-            width: 100%;
+        .grid-item img {
+            max-width: 100%;
             height: auto;
-            border-radius: 3px;
+            border: 1px solid #e5e5e5;
         }
         
-        .image-card h4 {
-            margin: 10px 0 5px;
-            color: #333;
-        }
-        
-        .image-card p {
+        .grid-item p {
             margin: 5px 0;
             font-size: 14px;
-            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Algorithm Visualization Gallery</h1>
-            <p>A visual exploration of 6 different algorithms with various test cases and implementations</p>
+            <h1>Algorithm Visualizations</h1>
+            <p>Comparing 6 algorithms across 6 different datasets</p>
         </header>
-        
+
         <section>
-            <!-- Sorting Algorithm Section -->
-            <div class="algorithm-section">
-                <h2>Sorting Algorithms</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort Case 1">
-                        <h4>Bubble Sort</h4>
-                        <p>Best Case Scenario</p>
-                    </div>
-                    <!-- Repeat for 5 more sorting visualizations -->
+            <!-- Bubble Sort -->
+            <h2>Bubble Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
 
-            <!-- Pathfinding Algorithm Section -->
-            <div class="algorithm-section">
-                <h2>Pathfinding Algorithms</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="A* Pathfinding Case 1">
-                        <h4>A* Algorithm</h4>
-                        <p>Maze Navigation</p>
-                    </div>
-                    <!-- Repeat for 5 more pathfinding visualizations -->
+            <!-- Quick Sort -->
+            <h2>Quick Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
 
-            <!-- Tree Algorithm Section -->
-            <div class="algorithm-section">
-                <h2>Tree Algorithms</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Binary Search Tree Case 1">
-                        <h4>Binary Search Tree</h4>
-                        <p>Balanced Tree Operations</p>
-                    </div>
-                    <!-- Repeat for 5 more tree visualizations -->
+            <!-- Merge Sort -->
+            <h2>Merge Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
 
-            <!-- Graph Algorithm Section -->
-            <div class="algorithm-section">
-                <h2>Graph Algorithms</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Dijkstra Algorithm Case 1">
-                        <h4>Dijkstra's Algorithm</h4>
-                        <p>Shortest Path Finding</p>
-                    </div>
-                    <!-- Repeat for 5 more graph visualizations -->
+            <!-- Insertion Sort -->
+            <h2>Insertion Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
 
-            <!-- Dynamic Programming Section -->
-            <div class="algorithm-section">
-                <h2>Dynamic Programming</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Knapsack Problem Case 1">
-                        <h4>Knapsack Problem</h4>
-                        <p>Optimal Solution Visualization</p>
-                    </div>
-                    <!-- Repeat for 5 more DP visualizations -->
+            <!-- Selection Sort -->
+            <h2>Selection Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
 
-            <!-- Search Algorithm Section -->
-            <div class="algorithm-section">
-                <h2>Search Algorithms</h2>
-                <div class="algorithm-grid">
-                    <div class="image-card">
-                        <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Binary Search Case 1">
-                        <h4>Binary Search</h4>
-                        <p>Sorted Array Search</p>
-                    </div>
-                    <!-- Repeat for 5 more search visualizations -->
+            <!-- Heap Sort -->
+            <h2>Heap Sort</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 1">
+                    <p>Dataset 1: Random Array</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 2">
+                    <p>Dataset 2: Nearly Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 3">
+                    <p>Dataset 3: Reverse Sorted</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 4">
+                    <p>Dataset 4: Few Unique</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 5">
+                    <p>Dataset 5: All Equal</p>
+                </div>
+                <div class="grid-item">
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 6">
+                    <p>Dataset 6: Large Dataset</p>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>Maintained by <a href="https://github.com/yourusername">Your GitHub Username</a></p>
-            <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            <p><small>Hosted on GitHub Pages using the Minimal theme</small></p>
         </footer>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
