@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithm Visualizations</title>
+    <title>SHAP Algorithm Visualizations</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
         .grid-container {
@@ -40,189 +40,180 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>Algorithm Visualizations</h1>
-            <p>Comparing 6 algorithms across 6 different datasets</p>
+            <h1>Beeswarm SHAP Algorithm Plot Visualizations</h1>
+            <p>Comparing Beeswarm plots of 6 algorithms across 6 different datasets</p>
         </header>
 
         <section>
-            <!-- Bubble Sort -->
-            <h2>Bubble Sort</h2>
+            <h2>Extra Trees</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Bubble Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_ExtraTreesClassifier_SHAP_summary.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
 
-            <!-- Quick Sort -->
-            <h2>Quick Sort</h2>
+            <h2>Random Forest</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_RF_SHAP_summary.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_RF_SHAP_summary.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_RF_SHAP_summary.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_RF_SHAP_summary.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_RF_SHAP_summary.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Quick Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_RF_SHAP_summary.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
 
-            <!-- Merge Sort -->
-            <h2>Merge Sort</h2>
+            <h2>Extreme Gradient Boosting</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_XGBClassifier_shap.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_XGBClassifier_shap.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_XGBClassifier_shap.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_XGBClassifier_shap.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_XGBClassifier_shap.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Merge Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_XGBClassifier_shap.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
 
-            <!-- Insertion Sort -->
-            <h2>Insertion Sort</h2>
+            <h2>CatBoost</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Insertion Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_CatBoostClassifier_shap.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
 
-            <!-- Selection Sort -->
-            <h2>Selection Sort</h2>
+            <h2>Multi layer Perceptron Classifier</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_MLP_shap.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_MLP_shap.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_MLP_shap.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_MLP_shap.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_MLP_shap.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Selection Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_MLP_shap.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
 
-            <!-- Heap Sort -->
-            <h2>Heap Sort</h2>
+            <h2>K-Nearest Neighbors algorithm</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 1">
-                    <p>Dataset 1: Random Array</p>
+                    <img src="shap_plots/ant.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 1: Ant</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 2">
-                    <p>Dataset 2: Nearly Sorted</p>
+                    <img src="shap_plots/itextpdf.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 2: iTextpdf</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 3">
-                    <p>Dataset 3: Reverse Sorted</p>
+                    <img src="shap_plots/liferay.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 3: Liferay</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 4">
-                    <p>Dataset 4: Few Unique</p>
+                    <img src="shap_plots/lucene.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 4: Lucene</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 5">
-                    <p>Dataset 5: All Equal</p>
+                    <img src="shap_plots/struts.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 5: Struts</p>
                 </div>
                 <div class="grid-item">
-                    <img src="shap_plots/ant.csv_CatBoostClassifier_shap.png" alt="Heap Sort - Dataset 6">
-                    <p>Dataset 6: Large Dataset</p>
+                    <img src="shap_plots/tomcat.csv_KNN_SHAP_summary.png">
+                    <p>Dataset 6: Tomcat</p>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <p><small>Hosted on GitHub Pages using the Minimal theme</small></p>
-        </footer>
     </div>
 </body>
 </html>
